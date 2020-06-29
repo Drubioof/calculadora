@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#575757"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -14,7 +15,7 @@
         android:layout_width="match_parent">
         <TextView
             android:id="@+id/solucion"
-            android:background="#1000"
+            android:background="#808080"
             android:text="0"
             android:textAlignment="center"
             android:gravity="center"
@@ -34,7 +35,7 @@
             android:id="@+id/num_siete"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginRight="20dp"
             android:text="7"
             android:textSize="24sp"/>
@@ -64,10 +65,6 @@
 
     </LinearLayout>
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
         android:orientation="horizontal"
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
@@ -111,10 +108,6 @@
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
 
         <Button
             android:id="@+id/num_uno"
@@ -153,10 +146,6 @@
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
 
         <Button
             android:id="@+id/borrar"
@@ -190,5 +179,31 @@
             android:text="+"
             android:textSize="24sp"/>
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Última operacion:"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginHorizontal = "20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ultimo"
+            android:text=""
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </LinearLayout>
 </LinearLayout>
